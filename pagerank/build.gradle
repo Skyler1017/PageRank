@@ -1,0 +1,19 @@
+plugins {
+    id 'application'
+}
+
+
+repositories {
+    mavenCentral()
+}
+
+application {
+    mainClassName = 'Main'
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile group: 'org.apache.hadoop', name: 'hadoop-client', version: '3.3.0'
+    compile group: 'org.apache.hive', name: 'hive-jdbc', version: '3.1.2'
+    compile group: 'org.apache.hbase', name: 'hbase-client', version: '2.3.2'
+}
